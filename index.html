@@ -17,34 +17,31 @@
   <script src="js/tooltipster.bundle.min.js"></script>
   <script src="js/index.js"></script>
 
-  <title>Cytoscape.js tutorial demo</title>
+  <title>Tracer</title>
 </head>
 
 <body>
-  <h1>Cytoscape.js tutorial demo</h1>
+  <h1>Tracer</h1>
 
   <div id="cy" class="main">
   </div>
 
   <div class="tools">
-    <h2>Data</h2>
+    <h2>Map of actors - TRACE LAC</h2>
 
-    <p>The <a target="_blank" href="http://js.cytoscape.org/#notation/elements-json">data</a> specifies what should be put in
-      the graph. Select between one of the example data sets or specify your own custom data in the code.</p>
+    <p>Enhancing Tools for Response, Analytics and Control of Epidemics in Latin America and the Caribbean.</p>
 
-    <label for="data" class="tooltip u-pull-left" title="Switch to a new dataset">Active dataset</label>
+    <label for="data" class="tooltip u-pull-left" title="Switch to a new dataset">Actor Type</label>
     <div class="u-cf"></div>
     <select class id="data">
-        <option value="social.json" selected>Social</option>
-        <option value="genes.json">Genes</option>
-        <option value="custom.json">Custom</option>
+        <option value="actors.json" selected>Complete</option>
+        <option value="organization.json">Organization</option>
+        <!-- <option value="custom.json">Custom</option> -->
       </select>
 
     <h2>Style</h2>
 
-    <p>The <a target="_blank" href="http://js.cytoscape.org/#style">stylesheet</a> is used to specify rules that affect how
-      the elements in the graph look. Select between one of the example stylesheets or specify your own custom stylesheet
-      in the code.</p>
+    <p><a target="_blank" href="http://js.cytoscape.org/#style">stylesheet</a></p>
 
     <label for="style" class="tooltip u-pull-left" title="Switch to a new graph stylesheet">Active stylesheet</label>
     <div class="u-cf"></div>
@@ -56,8 +53,7 @@
 
     <h2>Layout</h2>
 
-    <p>The <a target="_blank" href="http://js.cytoscape.org/#layouts">layout</a> is used to specify how the nodes are positioned
-      in the viewport. Select between one of the example layouts or specify your own in the code.</p>
+    <p><a target="_blank" href="http://js.cytoscape.org/#layouts">layout</a> </p>
 
     <label for="layout" class="tooltip u-pull-left" title="Change layout">Active layout</label>
     <div class="u-cf"></div>
@@ -65,14 +61,14 @@
         <option value="cola" selected>Force-directed</option>
         <option value="concentricCentrality">Concentric by centrality</option>
         <option value="concentricHierarchyCentrality">Hierarchy by centrality</option>
+        <option value="cose">Cose</option>
         <option value="custom">Custom</option>
       </select>
     <i id="redo-layout" class="fa fa-refresh action-icon tooltip" title="Redo layout"></i>
 
     <h2>Algorithms</h2>
 
-    <p>Cytoscape.js can analyze data with a variety of <a target="_blank" href="http://js.cytoscape.org/#collection/algorithms">graph theory algorithms</a>,
-      including Breadth-First Search and Depth-First Search.</p>
+    <p><a target="_blank" href="http://js.cytoscape.org/#collection/algorithms">graph theory algorithms</a></p>
 
     <label for="algorithm" class="tooltip u-pull-left" title="Run algorithm. Try running A* a few times to see distances to different nodes">
         Run algorithm
@@ -87,15 +83,6 @@
       </select>
     <i id="redo-algorithm" class="fa fa-refresh action-icon tooltip" title="Redo algorithm visualization"></i>
 
-    <h2>Using custom data</h2>
-
-    <p>To use custom data, styles, or layouts, <a target="_blank" href="https://github.com/cytoscape/cytoscape.js-tutorial-demo">clone the repo</a>      and modify <code>datasets/custom.json</code>, <code>js/index.js</code>, or <code>stylesheets/custom.cycss</code>.</p>
-  </div>
-
-  <div class="footer-link">
-    <a target="_blank" href="http://js.cytoscape.org">js.cytoscape.org</a>
-    <a target="_blank" href="https://vimeo.com/218307423">Introduction video</a>
-  </div>
 </body>
 
 </html>

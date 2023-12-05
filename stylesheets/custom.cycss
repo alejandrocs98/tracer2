@@ -1,1 +1,30 @@
-/* write your own stylesheet in this file */
+node {
+  label: data(name);
+  width: 80px; /* Adjust node width */
+  height: 80px; /* Adjust node height */
+  font-size: 30px; /* Adjust font size */
+}
+
+edge {
+  opacity: 0.5;
+  width: 20px;
+  target-arrow-shape: triangle;
+}
+
+node.highlighted {
+  border-width: 6px;
+  border-color: #333333;
+}
+
+node.start {
+  border-color: #8FDC97;
+}
+
+node.end {
+  border-color: #9F4A54;
+}
+
+edge.highlighted {
+  line-color: #008484;
+  width: 9px;
+}

@@ -50,7 +50,7 @@
 
     let $layout = $('#layout');
     let maxLayoutDuration = 1500;
-    let layoutPadding = 50;
+    let layoutPadding = 10;
     let concentric = function( node ){
       calculateCachedCentrality();
 
@@ -70,14 +70,14 @@
         name: 'cola',
         padding: layoutPadding,
         nodeSpacing: 12,
-        edgeLengthVal: 45,
+        edgeLengthVal: 30,
         animate: true,
         randomize: true,
         maxSimulationTime: maxLayoutDuration,
         boundingBox: { // to give cola more space to resolve initial overlaps
           x1: 0,
           y1: 0,
-          x2: 10000,
+          x2: 50000,
           y2: 10000
         },
         edgeLength: function( e ){
@@ -108,6 +108,12 @@
         sweep: Math.PI * 2 / 3,
         clockwise: true,
         startAngle: Math.PI * 1 / 6
+      },
+      cose: {
+        name: 'cose',
+        animate: true,
+        fit: true,
+        padding: layoutPadding
       },
       custom: { // replace with your own layout parameters
         name: 'preset',
